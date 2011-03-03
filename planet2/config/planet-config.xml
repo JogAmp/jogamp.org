@@ -4,8 +4,8 @@
     <planet title="Planet JogAmp"
             description="JogAmp Aggregated Feeds"
             author="Hungry Harry"
-            maxEntries="80"
-            maxEntriesPerPage="15"
+            maxEntries="200"
+            maxEntriesPerPage="10"
             name="index"
             link="http://jogamp.org/planet">
         <feed>rss_2.0</feed>
@@ -13,9 +13,12 @@
         <output>/srv/www/jogamp.org/planet</output>
     </planet>
 
-    <feed name="dominik" url="http://copypastaresearch.tumblr.com/rss"/>
-    <feed name="mbien" url="http://michael-bien.com/mbien/feed/entries/atom?tags=jogl"/>
-    <feed name="jau" url="http://jausoft.com/blog/category/computer-stuff/3d-opengl/jogl/feed/"/>
-    <feed name="rami" url="http://ramisantina.blogspot.com/feeds/posts/default/-/jogl"/>
-    <feed name="wade" url="http://en.wordpress.com/tag/java-opengl/feed/"/>
+    <feed name="dominik-blog" url="http://copypastaresearch.tumblr.com/rss"/>
+    <feed name="mbien-blog" url="http://michael-bien.com/mbien/feed/entries/atom?tags=jogl"/>
+    <feed name="jau-blog" url="http://jausoft.com/blog/category/computer-stuff/3d-opengl/jogl/feed/"/>
+    <feed name="rami-blog" url="http://ramisantina.com/blog/?feed=rss2&amp;tag=jogl"/>
+    <feed name="wade-blog" url="http://en.wordpress.com/tag/java-opengl/feed/"/>
+    <feed name="william-dyn4j-news" url="http://www.dyn4j.org/feed"/>
+    <feed name="william-blog-gl-tag" url="http://www.codezealot.org/archives/tag/opengl/feed"/>
+
 </config>

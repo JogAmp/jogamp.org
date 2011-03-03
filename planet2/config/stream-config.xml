@@ -3,7 +3,7 @@
     <planet title="JogAmp Streams"
             description="JogAmp Aggregated Feeds"
             author="Hungry Harry"
-            maxEntries="100"
+            maxEntries="500"
             maxEntriesPerPage="20"
             name="index"
             link="http://jogamp.org/stream/">
@@ -11,8 +11,20 @@
         <template>/srv/www/jogamp.org/planet2/config/stream-template.html</template>
         <output>/srv/www/jogamp.org/stream</output>
     </planet>
-    <feed name="demoscenepassivist" url="http://gdata.youtube.com/feeds/base/users/DemoscenePassivist/uploads?alt=rss&amp;v=2&amp;orderby=published&amp;client=ytapi-youtube-profile"/>
-    <feed name="demoscenepassivist-favorites" url="http://gdata.youtube.com/feeds/api/users/DemoscenePassivist/favorites?orderby=updated"/>
+    <feed name="demoscenepassivist1" url="http://gdata.youtube.com/feeds/base/users/DemoscenePassivist/uploads?alt=rss&amp;v=2&amp;orderby=published&amp;client=ytapi-youtube-profile&amp;max-results=50&amp;category=jogl"/>
+    <feed name="demoscenepassivist2" url="http://gdata.youtube.com/feeds/base/users/DemoscenePassivist/uploads?alt=rss&amp;v=2&amp;orderby=published&amp;client=ytapi-youtube-profile&amp;start-index=50&amp;max-results=50&amp;category=jogl"/>
+    <feed name="demoscenepassivist3" url="http://gdata.youtube.com/feeds/base/users/DemoscenePassivist/uploads?alt=rss&amp;v=2&amp;orderby=published&amp;client=ytapi-youtube-profile&amp;start-index=100&amp;max-results=50&amp;category=jogl"/>
+    <feed name="demoscenepassivist4" url="http://gdata.youtube.com/feeds/base/users/DemoscenePassivist/uploads?alt=rss&amp;v=2&amp;orderby=published&amp;client=ytapi-youtube-profile&amp;start-index=150&amp;max-results=50&amp;category=jogl"/>
+
+    <feed name="trigger1" url="http://gdata.youtube.com/feeds/base/users/triggerHLM/uploads?alt=rss&amp;v=2&amp;orderby=published&amp;client=ytapi-youtube-profile&amp;max-results=50&amp;category=jogl"/>
+    <feed name="trigger2" url="http://gdata.youtube.com/feeds/base/users/triggerHLM/uploads?alt=rss&amp;v=2&amp;orderby=published&amp;client=ytapi-youtube-profile&amp;start-index=50&amp;max-results=50&amp;category=jogl"/>
+    <feed name="trigger3" url="http://gdata.youtube.com/feeds/base/users/triggerHLM/uploads?alt=rss&amp;v=2&amp;orderby=published&amp;client=ytapi-youtube-profile&amp;start-index=100&amp;max-results=50&amp;category=jogl"/>
+    <feed name="trigger4" url="http://gdata.youtube.com/feeds/base/users/triggerHLM/uploads?alt=rss&amp;v=2&amp;orderby=published&amp;client=ytapi-youtube-profile&amp;start-index=150&amp;max-results=50&amp;category=jogl"/>
+
+    <feed name="demoscenepassivist-favorites1" url="http://gdata.youtube.com/feeds/api/users/DemoscenePassivist/favorites?orderby=updated&amp;max-results=50"/>
+    <feed name="demoscenepassivist-favorites2" url="http://gdata.youtube.com/feeds/api/users/DemoscenePassivist/favorites?orderby=updated&amp;start-index=50&amp;max-results=50"/>
+    <feed name="demoscenepassivist-favorites3" url="http://gdata.youtube.com/feeds/api/users/DemoscenePassivist/favorites?orderby=updated&amp;start-index=100&amp;max-results=50"/>
+    <feed name="demoscenepassivist-favorites4" url="http://gdata.youtube.com/feeds/api/users/DemoscenePassivist/favorites?orderby=updated&amp;start-index=150&amp;max-results=50"/>
 
     <template keyword="youtube" idpattern="http://www.youtube.com/watch\?v=([^&amp;]+)" descriptionfilter="&lt;span&gt;(.*)&lt;/span&gt;">
 <![CDATA[
