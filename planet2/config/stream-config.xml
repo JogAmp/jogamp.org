@@ -11,6 +11,7 @@
         <template>/srv/www/jogamp.org/planet2/config/stream-template.html</template>
         <output>/srv/www/jogamp.org/stream</output>
     </planet>
+    <feed name="sgothel01" url="http://gdata.youtube.com/feeds/base/users/sgothel/uploads?alt=rss&amp;v=2&amp;orderby=published&amp;client=ytapi-youtube-profile&amp;max-results=50&amp;category=jogl"/>
     <feed name="demoscenepassivist1" url="http://gdata.youtube.com/feeds/base/users/DemoscenePassivist/uploads?alt=rss&amp;v=2&amp;orderby=published&amp;client=ytapi-youtube-profile&amp;max-results=50&amp;category=jogl"/>
     <feed name="demoscenepassivist2" url="http://gdata.youtube.com/feeds/base/users/DemoscenePassivist/uploads?alt=rss&amp;v=2&amp;orderby=published&amp;client=ytapi-youtube-profile&amp;start-index=50&amp;max-results=50&amp;category=jogl"/>
     <feed name="demoscenepassivist3" url="http://gdata.youtube.com/feeds/base/users/DemoscenePassivist/uploads?alt=rss&amp;v=2&amp;orderby=published&amp;client=ytapi-youtube-profile&amp;start-index=100&amp;max-results=50&amp;category=jogl"/>
