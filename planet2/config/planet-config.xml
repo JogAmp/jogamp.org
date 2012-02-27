@@ -18,8 +18,8 @@
     <feed name="dominik-blog" url="http://copypastaresearch.tumblr.com/rss"/>
     <feed name="wade-blog" url="http://en.wordpress.com/tag/java-opengl/feed/"/>
     <feed name="xerxes-blog" url="http://labb.zafena.se/?category_name=jogamp&feed=rss2"/>
-    <feed name="mbien-blog1" url="http://michael-bien.com/mbien/feed/entries/atom?tags=jogl"/>
-    <feed name="mbien-blog2" url="http://michael-bien.com/mbien/feed/entries/atom?tags=jocl"/>
+    <!-- is-down feed name="mbien-blog1" url="http://michael-bien.com/mbien/feed/entries/atom?tags=jogl"/-->
+    <!-- is-down feed name="mbien-blog2" url="http://michael-bien.com/mbien/feed/entries/atom?tags=jocl"/-->
     <feed name="william-dyn4j-news" url="http://www.dyn4j.org/feed"/>
     <feed name="william-blog-gl-tag" url="http://www.codezealot.org/archives/tag/opengl/feed"/>
 
