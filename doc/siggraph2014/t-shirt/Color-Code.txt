@@ -1,0 +1,16 @@
+Pantone colors using the converter at:
+
+http://www.ginifab.com/feeds/pms/
+
+We got the following RGB to pantone matches:
+
+Front:
+RGB A6CEFF -> PMS 277 C
+RGB 3b4d4f -> PMS 446 C
+
+Back:
+RGB 114b3c -> PMS 3435 C
+
+Thanks,
+
+Harvey
