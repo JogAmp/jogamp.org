@@ -1,0 +1,36 @@
+Left channel has more noise than right channel.
+
+1) mp4: extract to wav file [A]
+
+Audacity:
+
+2) [A] -> [B] 
+  - AudioTrack: Split Stereo to Mono, drop right channel 'mono'
+  - Effect.Inverter
+
+3) [A] -> [C] 
+  - Tracks: Stereo Track to Mono
+  - Audio Track: Amplify +2dB (simply use slider)
+
+4) [B] + [C] -> [D]
+  - Tracks: Mix and Render
+
+5) [D] -> [E]
+  - Effect.Noise_Removal..
+    - Pick short noise sample
+    - Remove noise:
+      - Noise reduction -10 dB, 
+        Sensitivity 0dB, 
+        Frequency smoothing 300Hz, 
+        Attack/decay time 0.15s
+
+6) [E] -> [F]
+    - Effect.Compressor
+      - Threshold -16 dB
+        Noise Floor -30 dB
+        Ratio 2:1
+        Attack Time 0.2s
+        Decay Time 1.0s
+        Gain for 0dB: ON
+        Compress based on Peaks: ON
+  
