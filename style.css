@@ -19,7 +19,7 @@ body {padding:15px 20px; margin:0; background: #f5f5f5; font-family: "Trebuchet 
 #menu a {float:left; height:20px; padding:10px 20px; font-size:15px; font-weight:bold; text-decoration:none; font-family:Arial, Helvetica, sans-serif;}
 #menu a:hover {color:#444444; background-color: #ffffff;}
 
-#main {float:left; width:100%; height:100%; margin:5px 0; background-color: #FFFFFF; font-size:13px; line-height:120%;}
+#main {float:left; width:100%; height:100%; margin:5px 0; background-color: #FFFFFF; font-size:13px; line-height:1.4;}
 #main a {color:#111111; border-style:none;}
 #main a:hover {color:#000000; background-color: #eeeeee;}
 #main br {line-height:8px;}
@@ -33,13 +33,22 @@ body {padding:15px 20px; margin:0; background: #f5f5f5; font-family: "Trebuchet 
 .column {float: left; padding-left: 25px; padding-right: 50px}
 .splash {margin-left: auto; margin-right: auto; font-size:22px; }
 
-#text ul { margin-left:0em; padding-left:0.2em; margin-bottom:1em; }
+#text ul { padding: 0.3em 0em 0.3em 1em; }
 #text ul li { background:url(images/bullet.gif) 0em 0.3em no-repeat; padding-left: 0.8em; list-style: none; }
 #text ul li { background-image:url(images/bullet_child.gif); }
 #text ul li { margin-bottom:0.5em; }
-#text ol { margin-left:1.5em; padding-left:0px; }
+#text ol { padding: 0.3em 0em 0.3em 1em; }
 #text ol li { list-style:decimal; background-image:none; padding-left:0em; }
+#text ol li { margin-bottom:0.5em; }
 
+/**
+#text ol, #text ul {padding:0; margin:8px 0;}
+#text ul {padding: 0 1em; margin:8px 0;}
+#text li {margin-left:1em;}
+#text li {margin-left:1em;}
+#text ol {padding:0; margin:8px 0;}
+#text ul {padding: 0.3em 0em; }
+*/
 
 #sidebar {width:160px; height: auto; float: right; padding:0 30px 30px 30px; }
 #sidebar h3 {font-size:17px; font-weight:normal; margin:20px 0 5px 0;}
@@ -50,8 +59,6 @@ body {padding:15px 20px; margin:0; background: #f5f5f5; font-family: "Trebuchet 
 #text {margin-right:225px; padding:10px 30px 30px 30px; border-right: 5px solid #F5F5F5;}
 #text h1 {font-size:22px; font-weight:normal; margin:20px 0 10px 0;}
 #text h2 {font-size:19px; font-weight:normal; margin:20px 0 10px 0;}
-#text ol, #text ul {padding:0; margin:8px 0;}
-#text li {margin-left:40px;}
 
 #footer {height:40px; font-size:11px; clear:both;}
 #footer a:hover {color:#444444;}
