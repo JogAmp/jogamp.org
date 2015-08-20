@@ -1,0 +1,101 @@
+JogAmp on Debian 8.1.0 or Ubuntu 15.04 - 64bit
+
+    Debian 8.1.0 - 64bit:
+        <http://cdimage.debian.org/debian-cd/8.1.0/amd64/iso-dvd/debian-8.1.0-amd64-DVD-1.iso>
+        - Network mirror: ON
+        - GNOME + KDE
+        - KDM
+        - GRUB Master
+
+        - Disable rdnssd (which removed my ipv4 dhcp resolv.conf settings):
+            - sudo service rdnssd stop
+            - sudo update-rc.d rdnssd remove
+
+        - Note: Uses default gcc/g++ 2.9: gcc-4.9 and g++-4.9 
+        - Note: Uses default libstdc++ v3: libstdc++6 and libstdc++-4.9-dev
+
+    Ubuntu 15.04 - 64bit:
+        <http://de.releases.ubuntu.com/15.04/ubuntu-15.04-desktop-amd64.iso>
+        - No updates while installing!
+        - All defaults
+
+        - Note: Uses default gcc/g++ 2.9: gcc-4.9 and g++-4.9 
+        - Note: Uses default libstdc++ v3: libstdc++6 and libstdc++-4.9-dev
+
++++
+
+VBox settings:
+    - Linux/[Debian or Ubuntu], 64bit
+    - 2048 RAM
+    - 2 CPUs, Accel: VT-x/AMD-V, Nested Paging
+    - 10 GB HDD
+    - 128 MB Video Ram
+    - No 2D nor 3D acceleration
+    - ..
+
++++
+
+GlueGen: 
+    <http://jogamp.org/gluegen/doc/HowToBuild.html> (-> Debian)
+
+sudo apt-get install ssh
+sudo apt-get install openjdk-7-jre openjdk-7-jdk ant git-all p7zip-full gcc
+    Ubuntu 15.04 - 64bit:
+        Errors were encountered while processing:
+         runit
+         git-daemon-run
+mkdir projects
+mkdir projects/jogamp
+cd projects/jogamp
+git clone --recurse-submodules git://jogamp.org/srv/scm/gluegen.git gluegen
+cd gluegen/make
+ant
+    BUILD SUCCESSFUL
+ant junit.run
+    BUILD SUCCESSFUL
+cd ../..
+
++++
+
+JOAL: 
+    <http://jogamp.org/git/?p=joal.git;a=blob;f=README.txt;h=2107191183c2a8269d9b682e72124f422d272028;hb=HEAD>
+
+sudo apt-get install cmake autoconf libpulse-dev libpulse0 pulseaudio libasound2-dev libasound2
+git clone --recurse-submodules git://jogamp.org/srv/scm/joal.git
+cd joal/make
+ant
+    BUILD SUCCESSFUL
+ant junit.run
+    BUILD SUCCESSFUL
+cd ../..
+
++++
+
+JOGL: 
+    <http://jogamp.org/jogl/doc/HowToBuild.html> (-> Debian)
+
+sudo apt-get install openjdk-7-jre openjdk-7-jdk ant git-all p7zip-full gcc libgl1-mesa-dev libglu1-mesa-dev xorg-dev libice-dev libsm-dev libx11-dev libxext-dev libxxf86vm-dev libxinerama-dev libxrandr-dev libxrender-dev libxcursor-dev libudev-dev libc6-dev g++ libstdc++6 libstdc++-4.9-dev
+
+git clone --recurse-submodules git://jogamp.org/srv/scm/jogl.git jogl
+cd jogl/make
+ant
+    BUILD SUCCESSFUL
+ant junit.run
+    BUILD SUCCESSFUL
+
+Debian 8.1.0 - 64bit:
+    GL_VENDOR      VMware, Inc.
+    GL_RENDERER    Gallium 0.4 on llvmpipe (LLVM 3.5, 128 bits)
+    GL_VERSION     3.0 Mesa 10.3.2
+
+Ubuntu 15.04 desktop AMD64:
+    GL_VENDOR      VMware, Inc.
+    GL_RENDERER    Gallium 0.4 on llvmpipe (LLVM 3.6, 128 bits)
+    GL_VERSION     3.0 Mesa 10.5.2
+
+
+
+
+
+
+
