@@ -1,6 +1,7 @@
 bugzilla*
 mediawiki*
 git*
+cgit*
 planet
 deployment
 wiki
