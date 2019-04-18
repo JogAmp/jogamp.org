@@ -61,10 +61,10 @@ a:hover {color:#000000; background-color: #c9e2ff; border-radius: 5px 10px; padd
 
 /*webside theme colors*/
 #menu {background-color:#c9e2ff; background-image: linear-gradient(#f5f5f5, #c9e2ff, #f5f5f5);}
-#menu li, #footer {background-color:#c9e2ff;}
 #menu a, #footer a, #footer {color: #3b4d4f}
-#footer a:hover {background-color:#3b4d4f; color:#c9e2ff}
 #menu a:hover {color:#444444; background-color: #f5f5f5;}
+#footer {background-color:#c9e2ff;}
+#footer a:hover {background-color:#3b4d4f; color:#c9e2ff}
 
 #menu {height:40px; margin-top:5px;}
 #menu ul {margin:0; padding:0;}
