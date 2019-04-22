@@ -39,6 +39,11 @@
  * Note: 14px = 0.875em = 10.5pt = 3.6898mm = 0.1453inch (1 point = 1pt = 1/72in (cala) = 0.3528 mm)
  * Note: 16px (1em) is browser/css default.
  * Note: Wiki also uses 14px (0.875em)
+ *
+ * Header Top Margin: 8px
+ * Header + Text Left Margin: 24px
+ * Subsequent blocks have zero or collapsable top and left margins, maintaining layout alignment.
+ * Menu may use whole page width.
  */
 @import url("/style-fonts.css");
 
@@ -47,22 +52,15 @@ body {padding:0; margin:0; color:#111111; background: #ffffff; font-family: "Luc
 a {color:#111111; border-style:none; padding: 2px; text-decoration: underline; text-decoration-style: dotted}
 a:hover {color:#000000; background-color: #c9e2ff; border-radius: 5px 10px; padding: 2px; }
 
-#container {padding:0; margin: 0; color:#111111; background: #ffffff; min-width:350px;}
+#container {padding:0; margin:0; color:#111111; background: #ffffff; min-width:350px;}
 #container img { border-style:none; margin:0; padding:0; }
 
-/** allow slogan within header to overpaint the logo (abs position 80 - 18 = 62)
-#header {height:90px; min-width:800px; display:block; }
-#logo { height:80px; font-size:40px; padding:16px 0 0 16px; display:inline-block;}
-#logo a { text-decoration:none; }
-#logo img {  margin: -10px 0 0 5px; border-style:none; }
-#slogan {float:right; font-size:18px; color:#444444; padding:0 8px 0 0; position: absolute; top:62px; right:0; display:inline-block; }
-*/
 /** Allow slogan to be invisible to the right space via min-width:560px */
-#header {height:90px; min-width:560px; display:block; }
-#logo { height:80px; font-size:40px; padding:16px 0 0 16px; display:inline-block;}
-#logo a { text-decoration:none; }
-#logo img {  margin: -10px 0 0 5px; border-style:none; }
-#slogan {float:right; font-size:18px; color:#444444; padding:62px 8px 0 0; right:0; display:inline-block; }
+#header {margin:8px 0 0 24px; min-width:560px; display:block; }
+#logo { height:80px; font-size:40px; display:inline-block; padding:0}
+#logo a { text-decoration:none; padding:0; display:block; }
+#logo img { padding: 0; margin: 0; border-style:none; }
+#slogan {float:right; font-size:18px; color:#444444; margin: 55px 8px 0 0; right:0; display:inline-block; }
 
 /*webside theme colors*/
 #menu {background-color:#c9e2ff; background-image: linear-gradient(#f5f5f5, #c9e2ff, #f5f5f5);}
@@ -76,54 +74,44 @@ a:hover {color:#000000; background-color: #c9e2ff; border-radius: 5px 10px; padd
 #menu li {list-style:none; float:left;}
 #menu a {float:left; height:20px; padding:10px 20px; font-size:15px; font-weight:bold; text-decoration:none;}
 
-#main {float:left; width:100%; height:100%; margin:0;}
+#main {float:left; width:100%; height:100%; padding:0; margin:0;}
 #main br {line-height:8px;}
 
 .rss {background:url(images/feed-icon-10x10.png) no-repeat scroll 2px 50% !important; padding:0px 0px 0px 15px;}
 .fill {margin-right:0 !important;}
 .centered {margin-left: auto; margin-right: auto; text-align: center;}
-.clear {clear: both; padding: 16px 0 0 0}
-.clearcentered {clear: both; padding: 16px 0 0 0; margin-left: auto; margin-right: auto; text-align: center;}
+.clear {clear: both; margin: 16px 0 0 0}
+.clearcentered {clear: both; margin: 16px auto 0 auto; text-align: center;}
 .codetight {float: left; font-family: monospace; font-size:12px; line-height:normal; text-align: left; display: block; white-space: pre;}
 .code {float: left; font-family: monospace; font-size:13px; line-height:normal; text-align: left; display: block; white-space: pre;}
-.column {float: left; padding: 0 16px 16px 8px; }
+.column {float: left; margin: 0 24px 16px 0; }
 .splash {margin-left: auto; margin-right: auto; font-size:22px; }
 
-#sidebar {font-size:13px; width:150px; height: auto; float: right; text-align: center; margin:16px 16px 16px 16px; padding: 0; }
+#sidebar {font-size:13px; width:150px; height: auto; float: right; text-align: center; margin:16px 16px 16px 16px; }
 #sidebar h3 {font-size:13px; font-weight:bold; font-style:italic; margin:13px 0 5px 0;}
 #sidebar ul {margin:0; padding:0;}
 #sidebar li {list-style:none; padding:1px 0; margin:8px 0;}
 #sidebar li a {text-decoration:none; display:block; border: 1px dotted #3b4d4f; border-radius: 8px 18px; }
 
-#text {margin-right:225px; padding:10px 25px 25px 25px; min-width:350px; }
+#text {padding:0; margin:14px 210px 24px 24px; min-width:350px; }
 #text img { padding: 5px; }
 #text h1 {font-size:20px; font-weight:normal; margin:18px 0 10px 0;}
 #text h2 {font-size:18px; font-weight:normal; margin:16px 0 10px 0;}
 #text h3 {font-size:16px; font-weight:normal; margin:14px 0 10px 0;}
 #text h4 {font-size:14px; font-weight:bold; margin:14px 0 10px 0;}
 
-#text ul { padding: 0.3em 0em 0.3em 1em; }
-#text ul li { background:url(images/bullet.gif) 0em 0.3em no-repeat; padding-left: 0.8em; list-style: none; }
+#text ul { padding: 0; margin: 8px 0 8px 8px; }
+#text ul li { background:url(images/bullet.gif) 0em 0.3em no-repeat; padding-left: 10px; list-style: none; }
 #text ul li { background-image:url(images/bullet_child.gif); }
-#text ul li { margin-bottom:0.5em; }
-#text ol { padding: 0.3em 0em 0.3em 1em; }
+#text ul li { margin-bottom: 7px; }
+#text ol { padding: 0; margin: 8px 0 8px 8px; }
 #text ol li { list-style:decimal; background-image:none; padding-left:0em; }
-#text ol li { margin-bottom:0.5em; }
-
-/**
-#text ol, #text ul {padding:0; margin:8px 0;}
-#text ul {padding: 0 1em; margin:8px 0;}
-#text li {margin-left:1em;}
-#text li {margin-left:1em;}
-#text ol {padding:0; margin:8px 0;}
-#text ul {padding: 0.3em 0em; }
-*/
+#text ol li { margin-bottom: 7px; }
 
 #footer {height:40px; font-size:10px; clear:both;}
-#footer_left {float:left; padding: 4px 0 0 5px;}
+#footer_left {float:left; margin: 4px 0 0 5px;}
 #footer_left img {float: left; margin-right: 5px;}
-
-#footer_right {float:right; padding:14px 30px 0 0;}
+#footer_right {float:right; margin:14px 30px 0 0;}
 
 td.streams_text { text-align: left; vertical-align: middle; }
 td.streams_thumbs { width:400px; }
