@@ -49,8 +49,8 @@
  * Note: 16px (1em) is browser/css default.
  * Note: Wiki also uses 14px (0.875em)
  *
- * Header Top Margin: 8px or 0.5714rem @ 14px
- * Header + Text Left Margin: 24px or 1.7143rem @ 14px
+ * Header Top Margin: 8px or 2.1166mm or 0.5714rem @ 14px (favorably using fixed 8px here)
+ * Header + Text Left Margin: 24px or 6.3499mm or 1.7143rem @ 14px (favorably using fixed 24px here)
  * Subsequent blocks have zero or collapsable top and left margins, maintaining layout alignment.
  * Menu may use whole page width.
  */
@@ -66,11 +66,11 @@ a:hover {color:#000000; background-color: #c9e2ff; border-radius: 0.3572rem 0.71
 #container img { border-style:none; margin:0; padding:0; }
 
 /** Allow slogan to be invisible to the right space via min-width:560px */
-#header {margin:0.5714rem 0 0 1.7143rem; min-width:560px; display:block; }
+#header {margin:8px 0 0 24px; min-width:560px; display:block; }
 #logo { height:80px; font-size:40px; display:inline-block; padding:0}
 #logo a { text-decoration:none; padding:0; display:block; }
 #logo img { padding: 0; margin: 0; border-style:none; }
-#slogan {float:right; font-size:1.2857rem; color:#444444; margin: 55px 0.5714rem 0 0; right:0; display:inline-block; }
+#slogan {float:right; font-size:1.2857rem; color:#444444; margin: 55px 8px 0 0; right:0; display:inline-block; }
 
 /*webside theme colors*/
 #menu {background-color:#c9e2ff; background-image: linear-gradient(#f5f5f5, #c9e2ff, #f5f5f5);}
@@ -103,7 +103,7 @@ a:hover {color:#000000; background-color: #c9e2ff; border-radius: 0.3572rem 0.71
 #sidebar li {list-style:none; padding:1px 0; margin:0.5714rem 0;}
 #sidebar li a {text-decoration:none; display:block; border: 1px dotted #3b4d4f; border-radius: 0.5714rem 1.2857rem; }
 
-#text {padding:0; margin:1rem 15rem 1.7143rem 1.7143rem; min-width:25rem; }
+#text {padding:0; margin:1rem 15rem 1.7143rem 24px; min-width:25rem; }
 #text img { padding: 0.3571rem; }
 #text h1 {font-size:1.4286rem; font-weight:normal; margin:1.2857rem 0 0.7143rem 0;}
 #text h2 {font-size:1.2857rem; font-weight:normal; margin:1.1429rem 0 0.7143rem 0;}
