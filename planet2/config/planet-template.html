@@ -2,9 +2,11 @@
 <html>
     <head>
         <title>Planet JogAmp</title>
-        <meta content="java, jogl, jocl, joal, opengl, opencl, openal, libraries" name="keywords"/>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta content="java, jogl, jocl, joal, opengl, opencl, openal, libraries" name="keywords"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="../style.css" type="text/css"/>
+        <link href="../style-alt1.css" rel="alternate stylesheet" title="default sans-serif font" type="text/css"/>
         <link href="../SocialCoding/logo_symbol_finals/website_final_blue_favicon_symbol_16x16pel.ico" rel="shortcut icon"/>
         <#list feedlinks as feed>
         <link rel="alternate" href="${planet.link}/${feed.fileName}" type="application/${feed.feedType}+xml"/>
@@ -39,14 +41,14 @@
                     <h3>Feeds</h3>
                     <ul>
                         <li class="rss">
-                            <a href="http://jausoft.com/blog">Sven's Blog</a>
+                            <a href="http://jausoft.com/blog/category/computer-stuff/">Jausoft's CS-Blog</a>
                         </li>
-                        <li class="rss">
+                        <!--li class="rss">
                             <a href="http://ramisantina.com/blog">Rami Santina's Blog</a>
-                        </li>
-                        <li class="rss">
+                        </li-->
+                        <!--li class="rss">
                             <a href="http://copypastaresearch.tumblr.com/">Form Over Function</a>
-                        </li>
+                        </li-->
                         <li class="rss">
                             <a href="http://wadeawalker.wordpress.com/category/java-opengl/">Wade Walker's Blog</a>
                         </li>
@@ -59,9 +61,9 @@
                         <li class="rss">
                             <a href="http://gouessej.wordpress.com/tag/jogl/">Blog de Julien Gouesse</a>
                         </li>
-                        <li class="rss">
+                        <!--li class="rss">
                             <a href="http://en.wordpress.com/tag/java-opengl/">java-opengl (WordPress Tag)</a>
-                        </li>
+                        </li-->
                         <li class="rss">
                             <a href="http://www.dyn4j.org">dyn4j</a>
                         </li>
@@ -78,7 +80,7 @@
                         <li><a href="../blog/">Blogs</a></li>
                     </ul>
                     <p>
-                        Powered by <a href="http://github.com/mbien/Hungry-Harry">Hungry Harry</a>
+                        Powered by <a href="http://jogamp.org/git/?p=Hungry-Harry.git">Hungry Harry</a>
                     </p>
                     <p>
                         updated ${updated?string("MMM d, hh:mm")}
