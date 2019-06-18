@@ -13,10 +13,10 @@
         <output>/srv/www/jogamp.org/planet</output>
     </planet>
 
-    <feed name="jau-blog" url="http://jausoft.com/blog/category/computer-stuff/3d-opengl/jogamp/feed/"/>
+    <feed name="jau-blog" url="https://jausoft.com/blog/category/computer-stuff/3d-opengl/jogamp/feed/"/>
     <!-- feed name="rami-blog" url="http://ramisantina.com/blog/?feed=rss2&amp;tag=jogl"/ -->
     <!-- feed name="dominik-blog" url="http://copypastaresearch.tumblr.com/rss"/ -->
-    <feed name="wade-blog" url="http://wadeawalker.wordpress.com/category/java-opengl/feed/"/>
+    <feed name="wade-blog" url="https://wadeawalker.wordpress.com/category/java-opengl/feed/"/>
     <feed name="xerxes-blog" url="http://labb.zafena.se/?category_name=jogamp&amp;feed=rss2"/>
     <!-- is-down feed name="mbien-blog1" url="http://michael-bien.com/mbien/feed/entries/atom?tags=jogl"/-->
     <!-- is-down feed name="mbien-blog2" url="http://michael-bien.com/mbien/feed/entries/atom?tags=jocl"/-->
