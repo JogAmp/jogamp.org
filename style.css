@@ -96,6 +96,7 @@ a:hover {color:#000000; background-color: #c9e2ff; border-radius: 0.3572rem 0.71
 .code {float: left; font-family: monospace; font-size:0.9286rem; line-height:normal; text-align: left; display: block; white-space: pre;}
 .column {float: left; margin: 0 1.7143rem 1.1429rem 0; }
 .splash {margin-left: auto; margin-right: auto; font-size:1.5714rem; }
+.nowrap {white-space: nowrap; }
 
 #sidebar {font-size:0.9286rem; width:10.7143rem; height: auto; float: right; text-align: center; margin:1.1429rem 1.1429rem 1.1429rem 1.1429rem; }
 #sidebar h3 {font-size:0.9286rem; font-weight:bold; font-style:italic; margin:0.9286rem 0 0.3571rem 0;}
